@@ -1,0 +1,25 @@
+<main class="mainWrapper">
+  <section class="list">
+    <header>
+      <h1>List</h1>
+    </header>
+
+    <div class="liContainer">
+      <app-card
+        *ngFor="let card of cardService.datalist"
+        [cardinfo]="card"
+        [curColor]="cardContent.color"
+        (click)="showCard(card)"
+      >
+      
+      </app-card>
+    </div>
+  </section>
+
+  <section class="details">
+    <h2>{{cardContent.name}}</h2>
+    <p>{{cardContent.description}}</p>
+    
+  
+  </section>
+</main>

@@ -1,0 +1,16 @@
+.mainWrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.list{
+  width: 50%;
+  border-right: 1px solid grey;
+  padding: 15px
+}
+
+.details{
+  width: 50%;
+  padding: 10px
+}
+

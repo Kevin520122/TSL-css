@@ -1,0 +1,14 @@
+<div 
+  class="card" 
+  (onClick)="showCard()"
+  [ngStyle]="{
+    'border-left': curColor === cardinfo.color 
+    ? '10px solid' + cardinfo.color 
+    : '4px solid' + cardinfo.color,
+      
+    'background-color': curColor === cardinfo.color ? '#d9d9d9' : ''
+  }"
+>
+  <h3>{{cardinfo.name}}</h3>
+  <p>{{cardinfo.description | limitedlen}}</p>
+</div>
